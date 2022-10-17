@@ -8,4 +8,9 @@ pipeline {
             }
         }
     }
+    stage('mvn build') {
+            steps {
+                echo 'mvn clean package'
+            }
+        }
 }
